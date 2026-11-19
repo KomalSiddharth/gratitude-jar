@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gratitude Jar 2027</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Dancing+Script:wght@500;700&family=Figtree:wght@400;500;600;700&family=Gaegu:wght@400;700&family=Kalam:wght@400;700&family=Shantell+Sans:wght@500;700;800&family=Special+Elite&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- sticker sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="st-heart" viewBox="0 0 40 40"><g stroke="#3B2A4A" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M20 34C6 24 5 14 11 10C15 7 19 9 20 13C21 9 25 7 29 10C35 14 34 24 20 34Z" fill="#FF8FB3"/><path d="M12 14C13 12 15 12 16 13" fill="none" stroke="#fff"/></g></symbol>
+    <symbol id="st-star" viewBox="0 0 40 40"><g stroke="#3B2A4A" stroke-width="1.8" stroke-linejoin="round"><polygon points="20,4 24.7,14.5 36,15.8 27.5,23.5 29.9,34.8 20,29 10.1,34.8 12.5,23.5 4,15.8 15.3,14.5" fill="#FFD95A"/></g></symbol>
+    <symbol id="st-sun" viewBox="0 0 40 40"><g stroke="#3B2A4A" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><g stroke="#F5A524" stroke-width="3"><line x1="20" y1="3" x2="20" y2="7"/><line x1="20" y1="33" x2="20" y2="37"/><line x1="3" y1="20" x2="7" y2="20"/><line x1="33" y1="20" x2="37" y2="20"/><line x1="32" y1="8" x2="29" y2="11"/><line x1="8" y1="8" x2="11" y2="11"/><line x1="32" y1="32" x2="29" y2="29"/><line x1="8" y1="32" x2="11" y2="29"/></g><circle cx="20" cy="20" r="9" fill="#FFC24D"/><path d="M16 21Q20 25 24 21" fill="none"/></g></symbol>
+    <symbol id="st-chai" viewBox="0 0 40 40"><g stroke="#3B2A4A" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M14 12C12 9 16 8 14 5M21 12C19 9 23 8 21 5" fill="none"/><path d="M8 16H28V26C28 31 24 34 18 34C12 34 8 31 8 26Z" fill="#F4A261"/><path d="M28 19H31C34 19 34 26 31 26H28" fill="none"/><path d="M8 20H28" stroke="#fff" stroke-width="1.5"/><path d="M6 37H30" fill="none"/></g></symbol>
+    <symbol id="st-rain" viewBox="0 0 40 40"><g stroke="#3B2A4A" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M12 25C6 25 5 17 11 16C12 10 21 9 24 14C30 13 33 20 29 25Z" fill="#BFE0FF"/><g stroke="#4F9BE8" stroke-width="2.6"><line x1="13" y1="29" x2="11" y2="34"/><line x1="20" y1="29" x2="18" y2="34"/><line x1="27" y1="29" x2="25" y2="34"/></g></g></symbol>
+    <symbol id="st-flower" viewBox="0 0 40 40"><g stroke="#3B2A4A" stroke-width="1.8" stroke-linejoin="round"><g fill="#FFB3D1"><circle cx="20" cy="10" r="7.5"/><circle cx="30" cy="17" r="7.5"/><circle cx="26" cy="29" r="7.5"/><circle cx="14" cy="29" r="7.5"/><circle cx="10" cy="17" r="7.5"/></g><circle cx="20" cy="20" r="5" fill="#FFD95A"/></g></symbol>
+    <symbol id="st-moon" viewBox="0 0 40 40"><g stroke="#3B2A4A" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M26 5C16 7 10 17 13 26C16 34 26 36 34 30C24 31 18 22 21 14C22 10 24 7 26 5Z" fill="#FFE59A"/><circle cx="30" cy="12" r="1.6" fill="#3B2A4A" stroke="none"/><circle cx="34" cy="20" r="1.2" fill="#3B2A4A" stroke="none"/></g></symbol>
+    <symbol id="st-sparkle" viewBox="0 0 40 40"><g stroke="#3B2A4A" stroke-width="1.8" stroke-linejoin="round"><path d="M20 3C21 14 26 19 37 20C26 21 21 26 20 37C19 26 14 21 3 20C14 19 19 14 20 3Z" fill="#C9B6FF"/></g></symbol>
+    <symbol id="st-leaf" viewBox="0 0 40 40"><g stroke="#3B2A4A" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M8 32C6 16 16 6 33 6C34 22 26 33 8 32Z" fill="#9FE0C0"/><path d="M8 32C15 25 21 19 28 12" fill="none"/></g></symbol>
+  </defs>
+</svg>
+
+<header class="wrap top">
+  <a class="brand" href="#top" aria-label="Gratitude Jar 2027">
+    <svg viewBox="0 0 40 40" aria-hidden="true"><g stroke="#3B2A4A" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><rect x="11" y="4" width="18" height="6" rx="2" fill="#FFB3D1"/><path d="M12 10H28V13C33 15 34 19 34 23V32C34 35 32 37 29 37H11C8 37 6 35 6 32V23C6 19 7 15 12 13Z" fill="#fff"/><rect x="14" y="27" width="7" height="5" rx="1" fill="#FFE08A" transform="rotate(-8 17 29)"/><rect x="21" y="29" width="7" height="5" rx="1" fill="#B5EAD7" transform="rotate(6 24 31)"/></g></svg>
+    Gratitude Jar 2027
+  </a>
+  <span class="pill" id="pillDays">Opens 1 Jan 2027</span>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <div class="wrap hero">
+    <div class="hero-deco" aria-hidden="true">
+      <svg class="sticker" viewBox="0 0 40 40"><use href="#st-heart"/></svg>
+      <svg class="sticker" viewBox="0 0 40 40"><use href="#st-sparkle"/></svg>
+      <svg class="sticker" viewBox="0 0 40 40"><use href="#st-sun"/></svg>
+    </div>
+    <h1>Drop one <mark>good thing</mark> in the jar every day.</h1>
+    <p class="lede">Write what you're grateful for on a sheet of chart paper, stick a sticker on it, and drop it in the jar. Once it's in, it stays in. On 31 December 2027 the jar opens and you read your whole year.</p>
+    <ul class="chips">
+      <li>Free</li>
+      <li>No account</li>
+      <li>Starts 1 January 2027</li>
+    </ul>
+  </div>
+
+  <!-- LIVE DEMO -->
+  <div class="wrap desk-wrap" id="try">
+    <div class="desk-title">
+      <h2>Try a practice slip</h2>
+      <span>it's your jar for a minute</span>
+    </div>
+    <div class="desk">
+      <div class="sheet slip-card" id="card" style="--tc:var(--pink)">
+        <span class="tape" aria-hidden="true"></span>
+        <div class="card-top">
+          <span class="date" id="dateLine">Today</span>
+          <span class="top-right">
+            <svg class="sticker mood-badge" id="moodBadge" viewBox="0 0 40 40" aria-hidden="true"><use href="#st-sun"/></svg>
+            <span class="practice" id="practiceTag">practice slip</span>
+          </span>
+        </div>
+
+        <span class="row-label" id="shapeLabel">Tear-off paper</span>
+        <div class="shape-row" id="shapes" role="group" aria-labelledby="shapeLabel"></div>
+
+        <div class="paper-wrap" id="paperWrap" data-shape="classic">
+          <div class="paper" id="paper" data-shape="classic">
+            <div class="write">
+              <label class="lab" for="note" style="margin:0 0 6px">Today I'm grateful for…</label>
+              <textarea id="note" placeholder="the first sip of chai" aria-label="What you are grateful for. Write as much as you like."></textarea>
+            </div>
+            <div class="stub" aria-hidden="true"><b>Admit one good day</b><i id="stubNo">No. 001</i></div>
+          </div>
+          <div class="layer" id="layer"></div>
+        </div>
+        <div class="count"><span id="count">0</span> words, write as much as you like</div>
+
+        <span class="row-label" id="fontLabel">Handwriting</span>
+        <div class="style-row" id="fonts" role="group" aria-labelledby="fontLabel"></div>
+        <div class="ink-row" id="inks" role="group" aria-label="Ink color"><span>Ink</span></div>
+
+        <span class="row-label" id="trayLabel">Stickers: tap to add, then drag them anywhere on the paper</span>
+        <div class="tray" id="tray" role="group" aria-labelledby="trayLabel"></div>
+        <div class="ctl" id="ctl" hidden>
+          <span id="ctlName">Selected</span>
+          <button type="button" class="chip-btn" data-act="left">Tilt left</button>
+          <button type="button" class="chip-btn" data-act="right">Tilt right</button>
+          <button type="button" class="chip-btn" data-act="big">Bigger</button>
+          <button type="button" class="chip-btn" data-act="small">Smaller</button>
+          <button type="button" class="chip-btn" data-act="del">Remove</button>
+        </div>
+        <div class="photo-row">
+          <button type="button" class="chip-btn" id="photoBtn">Add a photo</button>
+          <input type="file" id="photoIn" accept="image/*" hidden>
+          <small>It becomes a little polaroid you can drag. It never leaves your device.</small>
+        </div>
+
+        <span class="row-label" id="moodLabel">How did today feel? The slip takes this color.</span>
+        <div class="moods" id="moods" role="group" aria-labelledby="moodLabel"></div>
+
+        <button class="grab" id="grab" type="button" disabled>
+          <svg viewBox="0 0 18 18" aria-hidden="true"><g fill="currentColor"><circle cx="5" cy="4" r="1.6"/><circle cx="13" cy="4" r="1.6"/><circle cx="5" cy="9" r="1.6"/><circle cx="13" cy="9" r="1.6"/><circle cx="5" cy="14" r="1.6"/><circle cx="13" cy="14" r="1.6"/></g></svg>
+          <span id="grabLabel">Write something first</span>
+        </button>
+        <p class="status" id="status" aria-live="polite">Write one small thing. Everything else is optional.</p>
+      </div>
+
+      <div class="jar-col">
+        <button class="stage" id="stage" type="button" aria-label="Practice jar. It is sealed until 31 December 2027.">
+          <svg id="jarBack" viewBox="0 0 300 380" aria-hidden="true"></svg>
+          <div class="glow" id="glow"></div>
+          <div class="slips" id="slips"></div>
+          <svg id="jarFront" viewBox="0 0 300 380" aria-hidden="true"></svg>
+        </button>
+        <p class="jar-msg" id="jarMsg" aria-live="polite"></p>
+        <div class="jar-opts">
+          <span class="row-label">Pick your jar</span>
+          <div class="opt-row" id="jarPick" role="group" aria-label="Jar style"></div>
+          <span class="row-label">Hang a charm</span>
+          <div class="opt-row" id="charmPick" role="group" aria-label="Jar charm"></div>
+          <button type="button" class="btn-ghost" id="previewBtn">Peek at the 31 Dec opening</button>
+        </div>
+        <p class="jar-count"><b id="mine">0</b> of your slips in the jar, plus 6 samples. The jar glows a little brighter with every slip. Practice jars reset on refresh.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- HOW IT WORKS -->
+  <section>
+    <div class="wrap">
+      <h2 class="big">Three small things, every day.</h2>
+      <ol class="steps">
+        <li class="sheet step"><span class="tape" aria-hidden="true"></span><span class="num" aria-hidden="true">1</span>
+          <h3>Write it</h3>
+          <p>One line, or a whole page, on paper you choose: classic, heart, star or ticket stub. Small is perfect: a warm cup of chai, a call from home.</p>
+        </li>
+        <li class="sheet step"><span class="tape" aria-hidden="true"></span><span class="num" aria-hidden="true">2</span>
+          <h3>Stick it</h3>
+          <p>Place stickers anywhere, tilt them, add a photo, and pick the mood of the day. Every month has its own paper color.</p>
+          <svg class="sticker" viewBox="0 0 40 40" aria-hidden="true"><use href="#st-flower"/></svg>
+        </li>
+        <li class="sheet step"><span class="tape" aria-hidden="true"></span><span class="num" aria-hidden="true">3</span>
+          <h3>Drop it</h3>
+          <p>Drag the slip into the jar. The lid closes with a clink and stays closed until 31 December.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- GENTLE -->
+  <section style="padding-top:20px">
+    <div class="wrap split">
+      <div>
+        <h2 class="big">Missed a day? The jar doesn't mind.</h2>
+        <p class="kicker-p">There are no streaks and no red warnings. The jar only counts what's inside it, so you see days in your jar, never days you failed.</p>
+        <p class="kicker-p">Turn on a quiet evening reminder if you want one, and ignore it whenever you like. You can also go back and fill in the last few days.</p>
+      </div>
+      <div class="sheet cal">
+        <span class="tape" aria-hidden="true"></span>
+        <div class="cal-head"><b>January 2027</b><span>example month</span></div>
+        <div class="dow" aria-hidden="true"><span>S</span><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span></div>
+        <div class="cal-grid" id="cal" role="img" aria-label="Example January calendar with stickers on most days and a few empty squares"></div>
+        <p class="cal-foot" id="calFoot"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE RULE -->
+  <section class="band">
+    <div class="wrap">
+      <div class="rule-head">
+        <div>
+          <h2 class="big">Once it's in, it stays in.</h2>
+          <p class="kicker-p">No editing, no peeking, no taking it back. That's what makes every slip count. On 31 December 2027 the lid comes off and the whole year spills out, in date order.</p>
+        </div>
+        <div class="date-stamp" aria-hidden="true"><small>Jar opens</small>31 Dec<br>2027</div>
+      </div>
+      <ul class="months" id="months" aria-label="Twelve months, each with its own paper color"></ul>
+      <p class="months-note">A new paper color every month, so you can see the year change as the jar fills.</p>
+    </div>
+  </section>
+
+  <!-- REVEAL -->
+  <section>
+    <div class="wrap split rev">
+      <div class="sheet recap">
+        <span class="tape" aria-hidden="true"></span>
+        <span class="ex">Example recap</span>
+        <h3>Your 2027</h3>
+        <div class="huge" id="recapDays">318<small>of 365 days in your jar</small></div>
+        <dl>
+          <div><dt>Most grateful month</dt><dd>June</dd></div>
+          <div><dt>Most-used sticker</dt><dd><svg class="sticker" viewBox="0 0 40 40" aria-hidden="true"><use href="#st-chai"/></svg>Chai cup</dd></div>
+        </dl>
+        <div class="words" aria-label="Words that kept showing up"><span>family</span><span>chai</span><span>rain</span><span>walks</span></div>
+        <p class="foot">Only this card gets shared. Your notes stay yours.</p>
+      </div>
+      <div>
+        <h2 class="big">On 31 December, the jar opens.</h2>
+        <p class="kicker-p">Every slip comes out with its sticker, one day at a time, and you read your year back to yourself, with a letter from past you at the end. Then you get a small recap: how many days are in your jar, your most grateful month, the words that kept showing up.</p>
+        <p class="kicker-p">Share the recap card if you want to. The notes themselves never have to leave the jar.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MORE IN THE BOX -->
+  <section style="padding-top:20px">
+    <div class="wrap">
+      <h2 class="big">More little things in the box.</h2>
+      <p class="kicker-p">Tiles marked "Try it above" already work in the practice desk. The rest arrive in the app.</p>
+      <ul class="tiles">
+        <li class="sheet tile"><svg class="sticker" viewBox="0 0 40 40" aria-hidden="true"><use href="#st-heart"/></svg><h3>Tear-off shapes</h3><p>Classic, heart, star or ticket stub. Pick the paper that fits the day.</p><span class="badge">Try it above</span></li>
+        <li class="sheet tile"><svg class="sticker" viewBox="0 0 40 40" aria-hidden="true"><use href="#st-sparkle"/></svg><h3>Stickers anywhere</h3><p>Drag, tilt and resize stickers right on the paper, and add a photo as a polaroid.</p><span class="badge">Try it above</span></li>
+        <li class="sheet tile"><svg class="sticker" viewBox="0 0 40 40" aria-hidden="true"><use href="#st-flower"/></svg><h3>Your handwriting</h3><p>Six handwriting styles and four inks. Write a line or a full page, there's no limit.</p><span class="badge">Try it above</span></li>
+        <li class="sheet tile"><svg class="sticker" viewBox="0 0 40 40" aria-hidden="true"><use href="#st-rain"/></svg><h3>Mood colors</h3><p>Pick today's weather inside and the slip takes its color. By December your jar is a mood map.</p><span class="badge">Try it above</span></li>
+        <li class="sheet tile"><svg class="sticker" viewBox="0 0 40 40" aria-hidden="true"><use href="#st-sun"/></svg><h3>Pick your jar</h3><p>A classic jar, a round jar or a lantern, plus a charm on the neck. It glows brighter as it fills.</p><span class="badge">Try it above</span></li>
+        <li class="sheet tile"><svg class="sticker" viewBox="0 0 40 40" aria-hidden="true"><use href="#st-moon"/></svg><h3>Peek at 31 Dec</h3><p>See how the opening will feel, with a letter from past you, built from your practice slips.</p><span class="badge">Try it above</span></li>
+        <li class="sheet tile"><svg class="sticker" viewBox="0 0 40 40" aria-hidden="true"><use href="#st-star"/></svg><h3>Thank-you slips</h3><p>Write a note for someone else and send it to them as a link.</p><span class="badge soon">In the app</span></li>
+        <li class="sheet tile"><svg class="sticker" viewBox="0 0 40 40" aria-hidden="true"><use href="#st-leaf"/></svg><h3>Jar partners</h3><p>Open two jars together on 31 December, with one small kindness challenge each month.</p><span class="badge soon">In the app</span></li>
+        <li class="sheet tile"><svg class="sticker" viewBox="0 0 40 40" aria-hidden="true"><use href="#st-chai"/></svg><h3>Print-ready poster</h3><p>Your year as a poster with a month-by-month color strip, ready to print or share.</p><span class="badge soon">In the app</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PRIVACY -->
+  <section style="padding-top:20px">
+    <div class="wrap">
+      <h2 class="big">Yours, and only yours.</h2>
+      <ul class="priv">
+        <li><svg class="sticker" viewBox="0 0 40 40" aria-hidden="true"><use href="#st-moon"/></svg><h3>Stays on your device</h3><p>Your notes and photos are saved in your own browser. Nobody reads them, including us.</p></li>
+        <li><svg class="sticker" viewBox="0 0 40 40" aria-hidden="true"><use href="#st-star"/></svg><h3>No account, no email</h3><p>Open the page and start. There is nothing to sign up for.</p></li>
+        <li><svg class="sticker" viewBox="0 0 40 40" aria-hidden="true"><use href="#st-heart"/></svg><h3>A backup, if you want one</h3><p>Save a backup file any time, so clearing your browser never costs you a year.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FINAL -->
+  <section class="final">
+    <div class="wrap">
+      <h2>Your jar opens on 1 January 2027.</h2>
+      <p class="count-line" id="finalDays">Save the date</p>
+      <a class="btn" href="#try">Try a practice slip</a>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">Gratitude Jar 2027 &middot; one good thing a day</footer>
+
+<!-- year-end preview -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+  <div class="panel" id="panel">
+    <button type="button" class="close" id="mClose">Close</button>
+    <h2 id="mTitle">31 December 2027. The jar opens.</h2>
+    <p class="sub" id="mSub"></p>
+    <div class="strip" id="mStrip" aria-label="Mood colors of your year"></div>
+    <div class="entries" id="mEntries"></div>
+    <div class="sheet letter" id="mLetter"><span class="tape" aria-hidden="true"></span></div>
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
